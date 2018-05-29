@@ -9,3 +9,10 @@ docker version
 docker run hello-world
 
 docker run -d -p 8787:8787 -v "`pwd`":/home/rstudio/working -e PASSWORD=rstudio -e ROOT=TRUE rocker/tidyverse:3.5.0
+
+# Create a new git repo just for your docker files
+# Add 'Dockerfile' file to it with the following lines:
+> ####### Dockerfile #######
+> FROM rocker/tidyverse:3.5.0
+
+# Link git repo and docker repos at https://docs.docker.com/docker-hub/github/#linking-docker-hub-to-a-github-account
