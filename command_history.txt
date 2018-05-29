@@ -1,0 +1,11 @@
+brew update && brew cask install docker
+brew install bash-completion
+brew install docker-completion
+brew install docker-compose-completion
+brew install docker-machine-completion
+
+# Start Docker application
+docker version
+docker run hello-world
+
+docker run -d -p 8787:8787 -v "`pwd`":/home/rstudio/working -e PASSWORD=rstudio -e ROOT=TRUE rocker/tidyverse:3.5.0
