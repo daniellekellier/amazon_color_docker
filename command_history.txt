@@ -16,3 +16,6 @@ docker run -d -p 8787:8787 -v "`pwd`":/home/rstudio/working -e PASSWORD=rstudio 
 > FROM rocker/tidyverse:3.5.0
 
 # Link git repo and docker repos at https://docs.docker.com/docker-hub/github/#linking-docker-hub-to-a-github-account
+
+docker run -d dkellier/amazon_color_docker
+docker exec -i -t cranky_ride /bin/bash
