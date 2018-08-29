@@ -17,6 +17,9 @@ RUN apt-get update -qq \
 && install2.r --error \
     --deps TRUE \
     DT \
+    english \
     ggthemes \
     lme4 \
-    plotly
+    plotly \
+&& installGithub.r \
+	langcog/wordbankr@fec28549941a32368f8e75bdd204c2f43f1d33ad
